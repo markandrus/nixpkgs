@@ -7680,6 +7680,8 @@ with pkgs;
 
   amtk = callPackage ../development/libraries/amtk { };
 
+  avr32-toolchain = callPackage ../development/misc/avr32-toolchain {};
+
   avrgcclibc = throw "avrgcclibs are now separate packages, install avrbinutils, avrgcc and avrlibc";
 
   avrbinutils = callPackage ../development/misc/avr/binutils {};
